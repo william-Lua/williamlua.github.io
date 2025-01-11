@@ -1,23 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Lua</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="main-header">
-            <h1>William Lua</h1>
-        </div>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-</body>
-</html>
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main header styling */
+.main-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navigation bar styling */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.nav-bar ul li {
+    margin: 0 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    color: #3498db;
+}
