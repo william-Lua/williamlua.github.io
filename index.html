@@ -20,13 +20,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
         }
 
         /* Main header styling */
         .main-header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-top: 50px; /* Adds space at the top for better alignment */
         }
 
         .main-header h1 {
@@ -41,14 +40,16 @@
             justify-content: center;
             background-color: #333;
             width: 100%;
-            position: fixed;
+            position: sticky; /* Keeps the bar visible at the top */
             top: 0;
+            padding: 10px 0;
         }
 
         .nav-bar ul {
             display: flex;
             list-style: none;
-            padding: 10px 0;
+            justify-content: center;
+            width: 100%;
             margin: 0;
         }
 
@@ -69,17 +70,18 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="main-header">
-            <h1>William Lua</h1>
-        </div>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Main Header -->
+    <header class="main-header">
+        <h1>William Lua</h1>
     </header>
+    
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
