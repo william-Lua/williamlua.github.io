@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - William Lua</title>
+    <title>William Lua</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <style>
-        /* Include styles from index.html here */
+        /* Reset and global styles */
         * {
             margin: 0;
             padding: 0;
@@ -24,6 +24,7 @@
             align-items: center;
         }
 
+        /* Main header styling */
         .main-header {
             text-align: center;
             margin-top: 50px;
@@ -31,20 +32,21 @@
 
         .main-header h1 {
             font-size: 3rem;
-            font-weight: 300;
+            font-weight: 300; /* Thinner font weight */
             color: #333;
         }
 
+        /* Navigation bar styling */
         .nav-bar {
             display: flex;
             justify-content: center;
             width: 100%;
             position: sticky;
             top: 0;
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(5px);
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+            backdrop-filter: blur(5px); /* Adds a subtle blur effect */
             padding: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better contrast */
         }
 
         .nav-bar ul {
@@ -61,7 +63,7 @@
 
         .nav-bar ul li a {
             text-decoration: none;
-            color: #333;
+            color: #333; /* Black text for tabs */
             font-size: 1.2rem;
             transition: color 0.3s ease;
         }
@@ -70,8 +72,9 @@
             color: #3498db;
         }
 
-        .contact {
-            margin-top: 100px;
+        /* About Me Section */
+        .about-me {
+            margin-top: 100px; /* Spacing from the navigation bar */
             text-align: center;
             max-width: 800px;
             line-height: 1.6;
@@ -79,35 +82,14 @@
             font-size: 1.1rem;
         }
 
-        .contact h2 {
+        .about-me h2 {
             font-size: 2rem;
             color: #333;
             margin-bottom: 20px;
         }
 
-        .contact form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .contact input,
-        .contact textarea {
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact input[type="submit"] {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        .contact input[type="submit"]:hover {
-            background-color: #2980b9;
+        .about-me p {
+            padding: 0 20px;
         }
     </style>
 </head>
@@ -115,28 +97,28 @@
 <body>
     <!-- Main Header -->
     <header class="main-header">
-        <h1>William Lua - Contact</h1>
+        <h1>William Lua</h1>
     </header>
 
     <!-- Navigation Bar -->
     <nav class="nav-bar">
         <ul>
+            <li><a href="index.html">About Me</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="index.html">About Me</a></li>
         </ul>
     </nav>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>Get in Touch</h2>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-            <input type="submit" value="Send Message">
-        </form>
+    <!-- About Me Section -->
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hello! I’m William Lua, a recent Computer Science graduate with a concentration in Cybersecurity. 
+            I have a strong passion for technology, problem-solving, and building secure, scalable systems.
+            In my free time, I enjoy exploring the latest trends in cybersecurity and contributing to personal 
+            projects that challenge my skills. Feel free to explore my portfolio to learn more about my work!
+        </p>
     </section>
 </body>
 
