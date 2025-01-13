@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+ <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Lua</title>
+    <title>Resume - William Lua</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <style>
-        /* Reset and global styles */
+        /* Include styles from index.html here */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f4f4f4;
@@ -22,32 +19,26 @@
             flex-direction: column;
             align-items: center;
         }
-
-        /* Main header styling */
         .main-header {
             text-align: center;
             margin-top: 50px;
         }
-
         .main-header h1 {
             font-size: 3rem;
-            font-weight: 300; /* Thinner font weight */
+            font-weight: 300;
             color: #333;
         }
-
-        /* Navigation bar styling */
         .nav-bar {
             display: flex;
             justify-content: center;
             width: 100%;
             position: sticky;
             top: 0;
-            background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
-            backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
             padding: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better contrast */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
         .nav-bar ul {
             display: flex;
             list-style: none;
@@ -55,67 +46,75 @@
             width: 100%;
             margin: 0;
         }
-
         .nav-bar ul li {
             margin: 0 20px;
         }
-
         .nav-bar ul li a {
             text-decoration: none;
-            color: #333; /* Black text for tabs */
+            color: #333;
             font-size: 1.2rem;
             transition: color 0.3s ease;
         }
-
         .nav-bar ul li a:hover {
             color: #3498db;
         }
-
-        /* About Me Section */
-        .about-me {
-            margin-top: 100px; /* Spacing from the navigation bar */
+        .resume {
+            margin-top: 100px;
             text-align: center;
             max-width: 800px;
             line-height: 1.6;
             color: #555;
             font-size: 1.1rem;
         }
-
-        .about-me h2 {
+        .resume h2 {
             font-size: 2rem;
             color: #333;
             margin-bottom: 20px;
         }
-
-        .about-me p {
-            padding: 0 20px;
+        .resume .experience {
+            margin-bottom: 40px;
+        }
+        .resume .experience h3 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .resume .experience p {
+            color: #555;
+            font-size: 1rem;
         }
     </style>
 </head>
+
 <body>
     <!-- Main Header -->
     <header class="main-header">
-        <h1>William Lua</h1>
+        <h1>William Lua - Resume</h1>
     </header>
-    
     <!-- Navigation Bar -->
     <nav class="nav-bar">
         <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- About Me Section -->
-    <section class="about-me">
-        <h2>About Me</h2>
-        <p>
-            Hello! I’m William Lua, a recent Computer Science graduate with a concentration in Cybersecurity. 
-            I have a strong passion for technology, problem-solving, and building secure, scalable systems.
-            In my free time, I enjoy exploring the latest trends in cybersecurity and contributing to personal 
-            projects that challenge my skills. Feel free to explore my portfolio to learn more about my work!
-        </p>
+    <!-- Resume Content -->
+    <section id="resume">
+    <!-- Resume Section -->
+    <section class="resume">
+        <h2>My Resume</h2>
+        <p>Download my resume:</p>
+        <a href="William_Lua_Resume.pdf" target="_blank">Download Resume</a>
+        <div class="experience">
+            <h3>Job Title 1</h3>
+            <p>Job description and experience details go here.</p>
+        </div>
+        <div class="experience">
+            <h3>Job Title 2</h3>
+            <p>Job description and experience details go here.</p>
+        </div>
+        <!-- Add more experience details as needed -->
     </section>
 </body>
-</html>
